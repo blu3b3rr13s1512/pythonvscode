@@ -61,7 +61,7 @@ with side4:
 st.header('Drinks')
 drink1,drink2,drink3,drink4 = st.columns(4)
 with drink1:
-    st.image('https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776_1280.jpg')
+    st.image('https://cdn.pixabay.com/photo/2020/12/10/08/08/drink-5819608_960_720.jpg')
     if st.checkbox("Soft Drink (Coke, Sprite, Fanta): $15"):
         bill+=15
         st.success("Added to Cart")
@@ -71,7 +71,7 @@ with drink2:
         bill+=35
         st.success ("Added to Cart")
 with drink3:
-    st.images('https://cdn.pixabay.com/photo/2012/11/28/09/31/orange-juice-67556_1280.jpg')
+    st.image ('https://cdn.pixabay.com/photo/2012/11/28/09/31/orange-juice-67556_1280.jpg')
     if st.checkbox("Orange Juice: $20"):
         bill+=20
         st.success("Added to Cart")
