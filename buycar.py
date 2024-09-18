@@ -1,10 +1,10 @@
 import streamlit as st
 
-print("Welcome to the Car Buyer Program!")
+st.write("Welcome to the Car Buyer Program!")
 name = st.text_input("What is your name? ")
 
 
-salary = st.float_input(input("What is your yearly salary? "))
+salary = st.number_input(input("What is your yearly salary? "))
 
 
 if salary < 30000:
@@ -19,6 +19,6 @@ else:
     car_type = "supercar"
 
 
-print(name,"based on your yearly salary of $",salary, "you can afford a",car_type)
+st.write(name,"based on your yearly salary of $",salary, "you can afford a",car_type)
 
 

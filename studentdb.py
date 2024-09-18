@@ -24,7 +24,7 @@ with engscorecol:
 with matscorecol:
     matscore = st.number_input("Student's score in Maths:",0)
 
-sciscorecol,medscore col = st.columns(2)
+sciscorecol,medscorecol = st.columns(2)
 with sciscorecol:
     sciscore = st.number_input ("Student's score in Science:",0)
 with medscorecol:
@@ -52,3 +52,6 @@ if st.button ("Check your overall score:"):
     st.write(studentsdict)
     table = pd.DataFrame(studentsdict)
     st.table(table)
+
+if menu == 'View Database | Chart':
+    
