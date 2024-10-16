@@ -53,5 +53,5 @@ if st.button ("Check your overall score:"):
     table = pd.DataFrame(studentsdict)
     st.table(table)
 
-if menu == 'View Database | Chart':
+
     

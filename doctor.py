@@ -33,3 +33,4 @@ email = st.text_input("Email:")
 
 if st.button("Submit"):
     st.success("Submitted!")
+    st.write(first,last,phone,dob,address,address2,city,region,zip,email)
