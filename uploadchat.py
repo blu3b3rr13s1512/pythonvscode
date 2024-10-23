@@ -18,10 +18,10 @@ if upload_csv:
 
     charttype = st.radio("type of chart",["bar chart","pie chart"],horizontal = True)
     if charttype == "bar chart":
-        bar_chart = px.bar(renamesubject,x = "subject",y = "average")
-        st.plotly_chart(bar_chart)
+        barchart = px.bar(renamesubject,x = "subject",y = "average")
+        st.plotly_chart(barchart)
     
     if charttype == "pie chart":
-        pie_chart = px.pie(renamesubject, x = "subject", y = "average")
-        st.plotly_chart(pie_chart)
+        piechart = px.pie(renamesubject,names = "subject",values= "average")
+        st.plotly_chart(piechart)
 
