@@ -16,3 +16,5 @@ if menu =='Upload Video':
     youtubelink = st.text_input("Paste in your YouTube Link Here")
     if st.button("Play your Youtube Video"):
         st.video(youtubelink)
+    else:
+        st.info("Please paste your link first")
